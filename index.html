@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="index.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tip calculator</title>
+</head>
+<body>
+  
+  <h1>Splitter</h1>
+
+  <div class="main-container">
+    <div class="left-side">
+      <form class="tipForm">
+        <div class="billContainer">
+          <label for="bill" name="bill">Bill</label>
+          <input type="text" id="bill" name="bill" placeholder="0">
+        </div>
+        <div class="tip-percentage-container">
+          <p>Select tip %</p>
+          <div class="percentages">
+            <input type="radio" id="five" name="percentage" value="5">
+            <label for="five">5%</label>
+          </div>
+          <div class="percentages">
+            <input type="radio" id="ten" name="percentage" value="10">
+            <label for="ten">10%</label>
+          </div>
+          <div class="percentages">
+            <input type="radio" id="fifteen" name="percentage" value="15">
+            <label for="fifteen">15%</label>
+          </div>
+          <div class="percentages">
+            <input type="radio" id="twenty-five" name="percentage" value="25">
+            <label for="twenty-five">25%</label>
+          </div>
+          <div class="percentages">
+            <input type="radio" id="fifty" name="percentage" value="50">
+            <label for="fifty">50%</label>
+          </div>
+          <div class="percentages">
+            <input type="text" id="custom%" name="percentage" placeholder="Custom">
+          </div>
+        </div>
+
+        <div class="peopleNumber">
+          <label for="people">Number of People</label>
+          <input type="text" placeholder="0">
+        </div>
+      </form>
+    </div>
+    <div class="right-side">
+      <p>Tip Amount</p>
+      <p>/person</p>
+      <span>$0.00</span>
+
+      <p>Total</p>
+      <p>/person</p>
+      <span>$0.00</span>
+    </div>
+  </div>
+
+</body>
+</html>
